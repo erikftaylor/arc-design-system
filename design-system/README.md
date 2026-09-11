@@ -109,7 +109,7 @@ npm run tokens:check
 git diff --check
 ```
 
-`npm run tokens:check` validates aliases and accessibility rules, regenerates `tokens.css`, confirms CSS parity, and runs the package contracts. A clean regeneration must leave no diff in `design-system/tokens/tokens.css`. Run the scoped ESLint command for modified package JavaScript as part of a change review; the repository-wide lint command may report unrelated application baseline findings.
+`npm run tokens:check` validates aliases and accessibility rules, regenerates `tokens.css`, confirms CSS parity, and runs the package contracts. A clean regeneration must leave no diff in `design-system/tokens/tokens.css`.
 
 ## Migration boundary
 
