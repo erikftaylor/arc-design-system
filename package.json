@@ -1,0 +1,12 @@
+{
+  "name": "arc-design-system",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "tokens:build": "node scripts/build-design-tokens.mjs",
+    "tokens:test": "node --test tests/design-system-tokens.test.mjs",
+    "tokens:validate": "node scripts/validate-design-tokens.mjs",
+    "tokens:check": "npm run tokens:validate && npm run tokens:build && git diff --exit-code -- design-system/tokens/tokens.css && npm run tokens:test"
+  }
+}
